@@ -1,50 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+  Sync Impact Report
+  Version: (none) → 1.0.0
+  Change: Initial ratification; principles and sections filled from user input (static website, minimal dependencies, responsive).
+  Modified principles: N/A (all new)
+  Added sections: Core Principles (5), Technology & Delivery, Quality & Review, Governance
+  Removed sections: None
+  Templates: plan-template.md ✅ (Constitution Check gate unchanged); spec-template.md ✅ (no mandatory section changes); tasks-template.md ✅ (task types compatible); commands in .specify/templates/commands/*.md: N/A (path does not exist); .cursor/commands/*.md: not under .specify
+  Follow-up TODOs: None
+-->
+
+# Static Website Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Static-First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Delivery MUST be static: HTML, CSS, and optional minimal JavaScript as files. No server runtime or database is required to serve core content. Rationale: Enables cheap hosting, CDN caching, and predictable behavior across environments.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Minimal Dependencies
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+Dependencies MUST be kept to a minimum. Every dependency MUST be justified; prefer platform APIs and vanilla patterns over frameworks. Rationale: Reduces supply-chain risk, build complexity, and bundle size while keeping the project maintainable.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Responsive (Mobile & Desktop)
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+The site MUST work well on mobile and desktop. Layout and interaction MUST adapt to viewport and input (touch and pointer/keyboard). Breakpoints and accessibility considerations (e.g. tap targets, readable text) are required. Rationale: Users access the site from varied devices; responsive design is non-negotiable for reach and usability.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Performance & Payload
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Load time and payload MUST be optimized. Prefer measurable targets (e.g. LCP, FID, total transfer) where applicable. Avoid unnecessary assets and render-blocking resources. Rationale: Fast, small pages improve UX and work better on slow or constrained networks.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Simplicity (YAGNI)
+
+Start simple; avoid adding features or abstractions until they are needed. Complexity MUST be justified against the current scope. Rationale: Keeps the codebase understandable and aligned with “minimal dependencies” and static delivery.
+
+## Technology & Delivery
+
+- **Output**: Static assets (HTML, CSS, JS as needed) suitable for any static host or CDN.
+- **Stack**: No mandatory framework; choose the smallest set of tools that satisfy principles (e.g. vanilla HTML/CSS/JS or a minimal static generator).
+- **Build**: Build steps MUST be minimal and reproducible; avoid unnecessary tooling.
+
+## Quality & Review
+
+- **Constitution Check**: Plans and specs MUST pass a gate that verifies alignment with these principles (e.g. static delivery, dependency count, responsive behavior, performance).
+- **Reviews**: Changes SHOULD be checked for responsive behavior, dependency additions (justified), and performance impact.
+- **Guidance**: Use README or project docs for day-to-day development and runbooks.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- This constitution supersedes ad-hoc practices for this project; decisions that conflict with it MUST be amended or the constitution updated.
+- Amendments require documentation, rationale, and version bump (semantic: MAJOR = incompatible principle removal/change, MINOR = new principle or material expansion, PATCH = clarifications/typos).
+- Compliance: All plans and feature work MUST verify alignment with the Constitution Check; deviations MUST be documented and justified (e.g. in a Complexity Tracking table).
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-02-20 | **Last Amended**: 2025-02-20
