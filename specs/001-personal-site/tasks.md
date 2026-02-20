@@ -23,9 +23,9 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per plan: index.html at repo root, css/ directory, js/ directory
-- [ ] T002 Add minimal HTML5 document shell to index.html (doctype, html, head with charset and viewport, body)
-- [ ] T003 [P] Add base styles to css/style.css (e.g. box-sizing, root font size, baseline for responsive layout)
+- [x] T001 Create project structure per plan: index.html at repo root, css/ directory, js/ directory
+- [x] T002 Add minimal HTML5 document shell to index.html (doctype, html, head with charset and viewport, body)
+- [x] T003 [P] Add base styles to css/style.css (e.g. box-sizing, root font size, baseline for responsive layout)
 
 ---
 
@@ -35,8 +35,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Add responsive layout baseline to css/style.css (fluid or breakpoint-based layout so FR-005/SC-003 can be met; no horizontal scroll for main content)
-- [ ] T005 Add semantic structure to index.html (main landmark, optional nav) and link css/style.css so content sections have a container and styles apply
+- [x] T004 Add responsive layout baseline to css/style.css (fluid or breakpoint-based layout so FR-005/SC-003 can be met; no horizontal scroll for main content)
+- [x] T005 Add semantic structure to index.html (main landmark, optional nav) and link css/style.css so content sections have a container and styles apply
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -50,8 +50,8 @@
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Add biography section to index.html per data-model.md (e.g. section with id="bio", heading, paragraphs; semantic structure)
-- [ ] T007 [US1] Add biography section styles to css/style.css (readable typography, spacing, line length for biography content)
+- [x] T006 [US1] Add biography section to index.html per data-model.md (e.g. section with id="bio", heading, paragraphs; semantic structure)
+- [x] T007 [US1] Add biography section styles to css/style.css (readable typography, spacing, line length for biography content)
 
 **Checkpoint**: User Story 1 is complete; biography is independently testable
 
@@ -65,8 +65,8 @@
 
 ### Implementation for User Story 2
 
-- [ ] T008 [US2] Add projects section to index.html with list of projects (each project has at least a title; optional description and anchor with href per data-model.md)
-- [ ] T009 [US2] Add project list styles to css/style.css (clear separation between projects, optional link styling; responsive)
+- [x] T008 [US2] Add projects section to index.html with list of projects (each project has at least a title; optional description and anchor with href per data-model.md)
+- [x] T009 [US2] Add project list styles to css/style.css (clear separation between projects, optional link styling; responsive)
 
 **Checkpoint**: User Stories 1 and 2 are both independently testable
 
@@ -80,8 +80,8 @@
 
 ### Implementation for User Story 3
 
-- [ ] T010 [US3] Add social and GitHub links section to index.html (at least one GitHub link, one or more social links; each with label and correct href; use target/rel as needed per contracts/content-structure.md)
-- [ ] T011 [US3] Add link section styles to css/style.css (identifiable labels, adequate touch/click targets; responsive)
+- [x] T010 [US3] Add social and GitHub links section to index.html (at least one GitHub link, one or more social links; each with label and correct href; use target/rel as needed per contracts/content-structure.md)
+- [x] T011 [US3] Add link section styles to css/style.css (identifiable labels, adequate touch/click targets; responsive)
 
 **Checkpoint**: All user stories are independently functional
 
@@ -91,8 +91,8 @@
 
 **Purpose**: Verification and final checks across all content
 
-- [ ] T012 Run quickstart.md validation: open index.html in browser, verify content and links work with JavaScript disabled, check at mobile and desktop viewport sizes (per specs/001-personal-site/quickstart.md)
-- [ ] T013 [P] Verify all external links in index.html have correct href and accessible names per specs/001-personal-site/contracts/content-structure.md
+- [x] T012 Run quickstart.md validation: open index.html in browser, verify content and links work with JavaScript disabled, check at mobile and desktop viewport sizes (per specs/001-personal-site/quickstart.md)
+- [x] T013 [P] Verify all external links in index.html have correct href and accessible names per specs/001-personal-site/contracts/content-structure.md
 
 ---
 
